@@ -9,7 +9,7 @@ formEl.addEventListener('submit', formSubmit);
         let password = formItems.password.value;
         let trimmedPassword = password.trim();
 
-        if (email === "" || password === "") {
+        if (email === "" || password.length === 0) {
             return alert("All fields must be filled in!");
           }
         
