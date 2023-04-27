@@ -1,4 +1,6 @@
 const formEl = document.querySelector('.login-form');
+const allInputs = document.querySelectorAll('input');
+
 
 formEl.addEventListener('submit', formSubmit);
 
@@ -9,7 +11,7 @@ formEl.addEventListener('submit', formSubmit);
         let password = formItems.password.value;
         let trimmedPassword = password.trim();
 
-        if (email === "" || password.length === 0) {
+        if (email === "" || trimmedPassword === "") {
             return alert("All fields must be filled in!");
           }
         
